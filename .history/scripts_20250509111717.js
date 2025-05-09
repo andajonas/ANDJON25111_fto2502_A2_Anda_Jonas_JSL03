@@ -31,18 +31,3 @@ function addTask() {
     logCompletedTasks();
     return;
   }
-  const title = prompt("Enter task title:");
-  const description = prompt("Enter task description:");
-  const status = prompt("Enter task status (todo, doing, done):");
-
-  const lastId = tasks[tasks.length - 1]?.id || 0;
-  const newTask = {
-    id: lastId + 1,
-    title: title?.trim() || "Untitled Task",
-    description: description?.trim() || "No description",
-    status: status?.trim().toLowerCase() || "todo",
-  };
-
-  tasks.push(newTask);
-  console.log("Task added:", newTask);
-}
