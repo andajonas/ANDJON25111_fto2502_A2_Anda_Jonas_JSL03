@@ -65,9 +65,5 @@ window.onload = function () {
   addTask();
 };
 
-// Function to return completed tasks (for other usage)
-function filterDoneTasks() {
-  return tasks.filter(task => task.status === "done");
-}
 
 
