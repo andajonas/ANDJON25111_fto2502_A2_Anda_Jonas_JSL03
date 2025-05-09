@@ -46,16 +46,3 @@ function addTask() {
   tasks.push(newTask);
   console.log("Task added:", newTask);
 }
-
-// Function to log all tasks
-function logAllTasks() {
-  console.log("=== All Tasks ===");
-  tasks.forEach(task => console.log(task));
-}
-
-// Function to log only completed tasks
-function logCompletedTasks() {
-  console.log("=== Completed Tasks ===");
-  const doneTasks = tasks.filter(task => task.status === "done");
-  doneTasks.forEach(task => console.log(task));
-}
