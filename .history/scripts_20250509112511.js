@@ -59,10 +59,3 @@ function logCompletedTasks() {
   const doneTasks = tasks.filter(task => task.status === "done");
   doneTasks.forEach(task => console.log(task));
 }
-
-// ✅ Trigger addTask when page loads
-window.onload = function () {
-  addTask();
-};
-
-
